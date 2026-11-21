@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "readme": "Per-physical-device display name overrides template. Copy this file to devices.json next to Voltide.exe (optional: without devices.json, every device keeps its provider's generic name). Matching rule: vid and pid (4-digit hex) must match, and either containerId (preferred) or instance must match the target physical device. Values can be inspected via: Voltide-Test.exe --test (or --test --json). Valid kind values: Mouse, Keyboard, Headset, Other.",
+  "overrides": [
+    {
+      "comment": "Example entry (fictional IDs). Replace vid, pid, containerId/instance, and display fields with your own device values.",
+      "vid": "3554",
+      "pid": "FA09",
+      "containerId": "{00000000-0000-0000-0000-000000000000}",
+      "instance": "a&12345678&0&0000",
+      "name": "Example Wireless Keyboard",
+      "brand": "ExampleBrand",
+      "model": "Model X",
+      "kind": "Keyboard"
+    }
+  ]
+}
